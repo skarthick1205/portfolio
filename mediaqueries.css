@@ -101,3 +101,193 @@
       text-align: justify;
     }
   }
+/* Media Queries for Mobile Devices */
+
+/* Mobile view (up to 480px) */
+@media (max-width: 480px) {
+    header {
+        padding: 10px 20px;
+        flex-direction: column;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+
+    .navlist {
+        display: none; /* Hide the nav list initially */
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navlist li {
+        margin: 10px 0;
+    }
+
+    .navlist a {
+        padding: 10px 20px;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .top-btn {
+        display: none;
+    }
+
+    section {
+        padding: 50px 10%;
+    }
+
+    .home {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 50px 10px;
+    }
+
+    .home-text h1 {
+        font-size: 36px;
+    }
+
+    .home-text h5 {
+        font-size: 16px;
+    }
+
+    .home-img {
+        margin-top: 20px;
+    }
+
+    .about-containers,
+    .details-container,
+    .experience-details-container,
+    .contact-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .section-container,
+    .about-details-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .details-container,
+    .about-containers,
+    .section__pic-container,
+    .contact-container,
+    .contact-info-upper-container {
+        width: 100%;
+    }
+
+    .contact-info-container p,
+    .contact-info-container a {
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+
+    .nav-links-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+    }
+}
+
+/* Tablet view (up to 768px) */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 30px;
+    }
+
+    .navlist {
+        display: none; /* Hide the nav list initially */
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navlist li {
+        margin: 10px 0;
+    }
+
+    .navlist a {
+        padding: 10px 20px;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .top-btn {
+        display: none;
+    }
+
+    section {
+        padding: 60px 10%;
+    }
+
+    .home {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 50px 10px;
+    }
+
+    .home-text h1 {
+        font-size: 40px;
+    }
+
+    .home-text h5 {
+        font-size: 18px;
+    }
+
+    .home-img {
+        margin-top: 20px;
+    }
+
+    .about-containers,
+    .details-container,
+    .experience-details-container,
+    .contact-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .section-container,
+    .about-details-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .details-container,
+    .about-containers,
+    .section__pic-container,
+    .contact-container,
+    .contact-info-upper-container {
+        width: 100%;
+    }
+
+    .contact-info-container p,
+    .contact-info-container a {
+        font-size: 16px;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+
+    .nav-links-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+    }
+}
