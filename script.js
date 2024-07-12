@@ -9,3 +9,11 @@ function toggleMenu() {
     menu.classList.toggle("open");
     icon.classList.toggle("open");
   }
+document.getElementById('menu-icon').onclick = function() {
+    const navlist = document.querySelector('.navlist');
+    if (navlist.style.display === 'flex') {
+        navlist.style.display = 'none';
+    } else {
+        navlist.style.display = 'flex';
+    }
+};
