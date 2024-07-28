@@ -269,5 +269,50 @@
         
           
         <script src="script.js"></script>
+
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+              const section = document.querySelector('.home,.about');
+  
+              const observer = new IntersectionObserver((entries) => {
+                  entries.forEach(entry => {
+                      if (entry.isIntersecting) {
+                          section.classList.add('animate');
+                      }
+                  });
+              }, {
+                  threshold: 0.1  // Trigger when 10% of the section is visible
+              });
+  
+              observer.observe(section);
+          });
+      </script>
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const aboutDetailsContainer = document.querySelector('.about-details-container');
+      const detailsContainers = document.querySelectorAll('.details-container');
+
+      const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  entry.target.classList.add('animate');
+              }
+          });
+      }, {
+          threshold: 0.1  // Trigger animation when 10% of the element is visible
+      });
+
+      if (aboutDetailsContainer) {
+          observer.observe(aboutDetailsContainer);
+      }
+
+      detailsContainers.forEach(container => {
+          observer.observe(container);
+      });
+  });
+</script>
     </body>
 </html>
